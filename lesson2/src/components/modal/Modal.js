@@ -12,7 +12,11 @@ const Modal = ({handleShow, inputValue, handleChange}) => {
             <div className={classes.modalContent}>
                 <button onClick={handleShow}>Закрыть</button>
                 {inputValue}
-                <Input type={'text'} handleChange={handleChange}/>
+                <Input type={'text'}
+                       handleChange={handleChange}
+                       placeholder={'напишите задачу'}
+                       inputValue={inputValue}
+                />
                 Modal
             </div>
         </>
